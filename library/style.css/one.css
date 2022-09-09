@@ -1,0 +1,320 @@
+                    * {
+                        padding: 0;
+                        margin: 0;
+                        border: 0;
+                    }
+                    
+                    *,
+                    *:before,
+                    *:after {
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+                    
+                     :focus,
+                     :active {
+                        outline: none;
+                    }
+                    
+                    a:focus,
+                    a:active {
+                        outline: none;
+                    }
+                    
+                    nav,
+                    footer,
+                    header,
+                    aside {
+                        display: block;
+                    }
+                    
+                    html,
+                    body {
+                        height: 100%;
+                        width: 100%;
+                        font-size: 100%;
+                        line-height: 1;
+                        font-size: 14px;
+                        -ms-text-size-adjust: 100%;
+                        -moz-text-size-adjust: 100%;
+                        -webkit-text-size-adjust: 100%;
+                    }
+                    
+                    input,
+                    button,
+                    textarea {
+                        font-family: inherit;
+                    }
+                    
+                    input::-ms-clear {
+                        display: none;
+                    }
+                    
+                    button {
+                        cursor: pointer;
+                    }
+                    
+                    button::-moz-focus-inner {
+                        padding: 0;
+                        border: 0;
+                    }
+                    
+                    a,
+                    a:visited {
+                        text-decoration: none;
+                    }
+                    
+                    a:hover {
+                        text-decoration: none;
+                    }
+                    
+                    ul li {
+                        list-style: none;
+                    }
+                    
+                    img {
+                        vertical-align: top;
+                    }
+                    
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                        font-size: inherit;
+                        font-weight: 400;
+                    }
+                    /*-------resset-------------*/
+                    
+                    .box {
+                        width: 800px;
+                        height: 600px;
+                        margin: 0 auto;
+                        padding: 0px 20px 0px 20px;
+                        background-color: rgb(242, 242, 242);
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    }
+                    
+                    .box div {
+                        margin-top: 20px;
+                    }
+                    
+                    .inputs h2,
+                    .checkbox h2,
+                    .radio-buttons h2,
+                    .buttons h2,
+                    .text-area h2 {
+                        font-weight: bolder;
+                        font-size: 14px;
+                        padding: 20px 20px 20px 0px;
+                    }
+                    
+                    .inputs input {
+                        width: 200px;
+                        height: 40px;
+                        border: 1px solid rgb(197, 197, 197);
+                        border-radius: 5px;
+                        padding-left: 10px;
+                    }
+                    
+                    .inputs .text-block:valid {
+                        color: green;
+                        border-color: green;
+                        background-image: url(../img/valid.png);
+                        background-repeat: no-repeat;
+                        background-position: 170px;
+                    }
+                    
+                    .inputs .text-block:invalid {
+                        color: red;
+                        border-color: red;
+                        background-image: url(../img/invalid.png);
+                        background-repeat: no-repeat;
+                        background-position: 170px;
+                    }
+                    
+                    .checkbox input {
+                        width: 28px;
+                        height: 12px;
+                    }
+                    
+                    .checkbox:not(checked)+label {
+                        margin: 20px;
+                        position: relative;
+                        font-size: 12px;
+                    }
+                    
+                    .checkbox label::before {
+                        content: '';
+                        position: absolute;
+                        width: 50px;
+                        height: 26px;
+                        opacity: 1;
+                        border-radius: 7px;
+                        background-color: white;
+                        border: 1px solid grey;
+                        left: -53px;
+                        top: -6px;
+                    }
+                    
+                    .checkbox label::after {
+                        content: '';
+                        position: absolute;
+                        width: 25px;
+                        height: 22px;
+                        opacity: 1;
+                        border-radius: 5px;
+                        background-color: #ff6969;
+                        border: 1px solid grey;
+                        left: -51px;
+                        top: -4px;
+                    }
+                    
+                    .checkbox:checked+label::before {
+                        border: 1px solid #42a742;
+                    }
+                    
+                    .checkbox:checked+label::after {
+                        left: -30px;
+                        background-color: #42a742;
+                    }
+                    
+                    .radio-buttons {
+                        margin-top: 20px;
+                        font-size: 12px;
+                    }
+                    
+                    .radio-buttons label {
+                        margin: 10px 10px 10px 0px;
+                        position: relative;
+                    }
+                    
+                    .radio-buttons span {
+                        padding: 10px;
+                    }
+                    
+                    .radio-buttons .radio:not(checked)+label::before {
+                        content: '';
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        left: -19px;
+                        top: -2px;
+                        opacity: 1;
+                        background-color: white;
+                        border-radius: 50%;
+                        border: 1px solid #42a742;
+                    }
+                    
+                    .radio-buttons .radio:not(checked)+label::after {
+                        content: '';
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        left: -17px;
+                        top: 0px;
+                        background-color: #42a742;
+                        border-radius: 50%;
+                        border-color: #42a742;
+                        opacity: 0;
+                    }
+                    
+                    .radio-buttons .radio:checked+label::after {
+                        opacity: 1;
+                    }
+                    
+                    .buttons .active {
+                        width: 75px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: #42a742;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: bolder;
+                    }
+                    
+                    .buttons .active:active {
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+                    }
+                    
+                    .buttons .hover {
+                        width: 75px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: #42a742;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: bolder;
+                    }
+                    
+                    .buttons .hover:hover {
+                        background-color: #2b722b;
+                    }
+                    
+                    .buttons .danger {
+                        width: 75px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: #db284e;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: bolder;
+                    }
+                    
+                    .buttons .danger:active {
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+                    }
+                    
+                    .buttons .d-hover {
+                        width: 75px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: #db284e;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: bolder;
+                    }
+                    
+                    .buttons .d-hover:hover {
+                        background-color: #a81f3d;
+                    }
+                    
+                    .buttons .disabled {
+                        width: 75px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: #6d6d6d;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: bolder;
+                    }
+                    
+                    .buttons .plus {
+                        width: 36px;
+                        height: 35px;
+                        border-radius: 50%;
+                        background-color: #42a742;
+                        color: white;
+                        font-size: 13px;
+                        font-weight: bolder;
+                    }
+                    
+                    .buttons .minus {
+                        width: 36px;
+                        height: 35px;
+                        border-radius: 50%;
+                        color: white;
+                        font-size: 13px;
+                        font-weight: bolder;
+                        background-color: #db284e;
+                    }
+                    
+                    textarea {
+                        padding: 15px;
+                        width: 400px;
+                        height: 100px;
+                        border-radius: 5px;
+                        border: 1px solid #9c9b9b
+                    }
